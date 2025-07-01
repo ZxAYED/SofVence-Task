@@ -5,7 +5,7 @@ import Slider from "../Components/ProductSection/ImageSwiper";
 
 const ProductCard = () => {
   return (
-    <Card className="w-full max-w-sm mx-auto shadow-lg">
+    <Card className="w-full max-w-sm mx-auto h-[450px] shadow-lg">
       <CardContent className="p-0">
         <div className="relative rounded-t-lg">
           <Button
@@ -15,8 +15,9 @@ const ProductCard = () => {
             <Heart className="h-10 w-10 text-white" />
           </Button>
 
-          <div className="flex justify-center items-center py-8 px-4">
+          <div className="flex justify-center items-center ">
             <Slider images={["/images/watch.png", "/images/watch.png"]} />
+            {/*  products.images pathhaye dibo */}
           </div>
         </div>
 

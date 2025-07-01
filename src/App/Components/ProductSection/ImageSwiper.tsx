@@ -27,7 +27,7 @@ const Slider = ({ images }: { images: string[] }) => {
         <div className="keen-slider__slide" key={index}>
           <img
             src={image}
-            className="object-contain h-64 w-full "
+            className="object-contain h-64  w-full "
             alt="Image of a product"
           />
           <button
