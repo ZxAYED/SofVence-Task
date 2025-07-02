@@ -5,7 +5,7 @@ const JoinUs = () => {
     <div className="w-full max-w-[1520px] mx-auto bg-gradient-to-r from-[#F46A39] to-[#F7813B] rounded-xl overflow-hidden shadow-md">
       <div className="relative flex flex-col md:flex-row justify-between items-start md:items-stretch">
         
-        <div className="text-white max-w-lg text-center md:text-left px-6 md:px-[60px] pt-[60px] pb-[60px] z-10">
+        <div className="text-white md:max-w-xl text-center md:text-left px-6 md:px-[60px] pt-[60px] pb-[60px] z-10">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold mb-4 leading-tight">
             WHY WAIT? JOIN <br className="hidden md:block" /> US TODAY!
           </h2>

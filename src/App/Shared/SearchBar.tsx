@@ -13,15 +13,15 @@ const SearchBar = () => {
     <div className="w-full max-w-[1520px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4 sm:px-6 md:px-12 lg:px-48 py-4">
       
       {/* Search Bar */}
-      <div className="w-full flex-1 flex items-center border rounded-full shadow-md px-2 sm:px-4 bg-white h-16 md:h-20">
+      <div className="w-full flex-1 flex items-center border rounded-full shadow-md px-2 sm:px-4 bg-white h-10 md:h-20">
         {/* Dropdown */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="text-orange-500 font-medium px-2 sm:px-4 text-sm md:text-base"
+              className="text-[#F46A39] font-normal px-2 sm:px-4 text-sm md:text-base"
             >
-              Products <ChevronDown className="w-4 h-4 ml-1" />
+              Products <ChevronDown className="w-4 h-2 ml-" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>

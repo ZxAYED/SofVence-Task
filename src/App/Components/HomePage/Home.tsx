@@ -7,10 +7,10 @@ const Home = () => {
 return (
   <>
     <div>Welcome to SoftVence</div>
-    <SearchBar />
-    <Thambnail />
+    {/* <SearchBar /> */}
+    {/* <Thambnail /> */}
     <TopManufacturer />
-    <JoinUs />
+    {/* <JoinUs /> */}
   </>
 );
 };

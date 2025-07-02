@@ -95,8 +95,8 @@ const TopRatedManufacturers = () => {
   return (
     <section className="py-10 max-w-[1520px] !mx-auto">
       <div className="mx-auto px-4 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-start">Top Rated Manufacturers</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-start">Top Rated Manufacturers</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4 lg:gap-8">
           {manufacturers.map((mfg) => (
             <ManufacturerCard
               key={mfg.id}

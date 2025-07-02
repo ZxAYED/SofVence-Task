@@ -18,12 +18,12 @@ type ManufacturerCardProps = {
 
 const ManufacturerCard = ({ shopName, location, image, rating }: ManufacturerCardProps) => {
   return (
-    <Card className="w-[420px] md:w-[350px] lg:w-[485px] hover:shadow-lg transition duration-300">
+    <Card className="w-[420px] md:w-[400px] lg:w-[485px] hover:shadow-lg transition duration-300">
       <CardContent className="flex flex-col">
         <Avatar >
           <div className="flex justify-between items-center gap-4"> 
             <div className="flex items-center gap-4"> 
-              <div className="w-14 h-14 md:w-16 md:h-16 flex justify-center items-center bg-[#E8EAED] p-4 rounded-full"> <FaShoppingBasket className="w-10 h-10" /> </div> 
+              <div className="w-[72px] h-[72px] md:w-16 md:h-16 flex justify-center items-center bg-[#E8EAED] p-4 rounded-full"> <FaShoppingBasket className="w-10 h-10" /> </div> 
               <div className="text-start"> 
                 <h4 className="md:text-xl font-semibold text-[#1A1A1A]">{shopName}</h4> 
                 <p className="flex items-center text-xs md:text-sm text-[#666666]"><IoLocationOutline /> {location} </p> 
@@ -31,7 +31,7 @@ const ManufacturerCard = ({ shopName, location, image, rating }: ManufacturerCar
           </div>
             <div>
               <div className="flex items-center justify-evenly bg-white rounded-[8px] shadow-md px-2">
-                <Star className="w-4 h-4 text-yellow-500" /> {rating}
+                <Star className="w-4 h-4 text-yellow-500 mr-2" /> {rating}
               </div>
               <p className="underline text-[#F04436] cursor-pointer pt-2">Details</p>
             </div>
