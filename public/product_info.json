@@ -1,0 +1,271 @@
+[
+  {
+    "productId": "BT-EARBUDS-BLACK",
+    "name": "Bluetooth Wireless Earbuds with Deep Bass, 40H Playtime, LED Display, IP7 Rating, Mic for iPhone and Android",
+    "brand": "Electronics Products Manufacturer",
+    "category": "Electronics",
+    "rating": {
+      "score": 4.5,
+      "reviews": 7457
+    },
+    "minimumOrderQuantity": 10,
+    "priceTiers": [
+      {
+        "quantityRange": "10-199",
+        "price": 5.34
+      },
+      {
+        "quantityRange": "200-499",
+        "price": 3.45
+      },
+      {
+        "quantityRange": "500-999",
+        "price": 1.56
+      },
+      {
+        "quantityRange": "\u22651000",
+        "price": 0.56
+      }
+    ],
+    "sample": {
+      "available": true,
+      "price": 1.5
+    },
+    "variants": [
+      {
+        "color": "Black",
+        "image": "/img/black_Earbuds1.png"
+      },
+      {
+        "color": "White",
+        "image": "/img/white_Earbuds1.png"
+      },
+      {
+        "color": "Pink",
+        "image": "/img/pink_Earbuds1.png"
+      }
+    ],
+    "shipping": {
+      "type": "Standard",
+      "description": "Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in."
+    },
+    "actions": [
+      "Add_To_Cart",
+      "Chat_Now",
+      "Buy_Now"
+    ],
+    "description": "Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in. Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in. Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in. Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in.",
+    "images": [
+      "/img/black_Earbuds1.png",
+      "/img/black_Earbuds2.png",
+      "/img/white_Earbuds1.png",
+      "/img/white_Earbuds2.png",
+      "/img/white_Earbuds3.png",
+      "/img/pink_Earbuds1.png",
+      "/img/pink_Earbuds2.png"
+    ],
+    "productDetails": {
+      "keyFeatures": [
+        "Crystal Clear Sound: Enjoy rich bass, clear mids, and crisp highs, delivering an immersive listening experience with every song.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts."
+      ],
+      "additionalFeatures": [
+        "Crystal Clear Sound: Enjoy rich bass, clear mids, and crisp highs, delivering an immersive listening experience with every song.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts.",
+        "True Wireless Connectivity: With Bluetooth 5.0, enjoy seamless, stable connection for uninterrupted music, calls, and podcasts."
+      ],
+      "keyAttributes": {
+        "Model": "TrueSound Pro Wireless Earbuds",
+        "Connectivity": "Bluetooth 5.0",
+        "Battery Life": "Up to 10 hours of playtime",
+        "Charging Time": "1.5 hours for full charge",
+        "Color Options": "Black, White, Blue",
+        "Driver Size": "10mm dynamic drivers",
+        "Packaging": "Includes earbuds, charging case, USB-C cable, and 3 sizes of ear tips"
+      }
+    }
+  },
+  {
+    "productId": "SMART-WATCH-BLK",
+    "name": "Smart Fitness Watch with Heart Rate Monitor, Sleep Tracking, 5ATM Waterproof, Compatible with iOS & Android",
+    "brand": "TechGear Co.",
+    "category": "Electronics",
+    "rating": {
+      "score": 4.7,
+      "reviews": 5283
+    },
+    "minimumOrderQuantity": 5,
+    "priceTiers": [
+      {
+        "quantityRange": "5-99",
+        "price": 15.99
+      },
+      {
+        "quantityRange": "100-299",
+        "price": 13.49
+      },
+      {
+        "quantityRange": "300-499",
+        "price": 10.99
+      },
+      {
+        "quantityRange": "≥500",
+        "price": 9.49
+      }
+    ],
+    "sample": {
+      "available": true,
+      "price": 4.99
+    },
+    "variants": [
+      {
+        "color": "Black",
+        "image": "/img/black_watch1.png"
+      },
+      {
+        "color": "Silver",
+        "image": "/img/silver_watch1.png"
+      },
+      {
+        "color": "Rose Gold",
+        "image": "/img/rose_watch1.png"
+      }
+    ],
+    "shipping": {
+      "type": "Express",
+      "description": "Shipped via secure express courier. Delivery within 7-10 business days."
+    },
+    "actions": [
+      "Add_To_Cart",
+      "Chat_Now",
+      "Buy_Now"
+    ],
+    "description": "Track your health and fitness with the Smart Fitness Watch. Equipped with a heart rate monitor, sleep tracking, and waterproof design, it's built for daily life. Get real-time notifications, control music, and more with just a flick of your wrist.",
+    "images": [
+      "/img/product3.png",
+      "/img/black_watch2.png",
+      "/img/silver_watch1.png",
+      "/img/rose_watch1.png"
+    ],
+    "productDetails": {
+      "keyFeatures": [
+        "Heart Rate & Sleep Monitoring",
+        "Fitness & Activity Tracker with Steps and Calories",
+        "Call, Text, and App Notifications",
+        "5ATM Water Resistance for Swimming",
+        "Customizable Watch Faces"
+      ],
+      "additionalFeatures": [
+        "Long Battery Life: Up to 10 days on a single charge",
+        "Magnetic Charging Cable Included",
+        "Compatible with iOS 10+ and Android 5.0+",
+        "Music & Camera Control",
+        "Breath Training & Sedentary Reminder"
+      ],
+      "keyAttributes": {
+        "Model": "FitTrack Pro 2",
+        "Display": "1.3-inch full-touch TFT screen",
+        "Connectivity": "Bluetooth 5.0",
+        "Battery Life": "Up to 10 days",
+        "Charging Time": "2 hours",
+        "Color Options": "Black, Silver, Rose Gold",
+        "Packaging": "Watch, charging cable, manual, retail box"
+      }
+    }
+  },
+  {
+  "productId": "COTTON-SHIRT-NAVY",
+  "name": "Men's Premium Cotton Casual Shirt – Slim Fit, Breathable, Button Down",
+  "brand": "UrbanStyle Apparel",
+  "category": "Clothing",
+  "rating": {
+    "score": 4.3,
+    "reviews": 3219
+  },
+  "minimumOrderQuantity": 20,
+  "priceTiers": [
+    {
+      "quantityRange": "20-99",
+      "price": 7.99
+    },
+    {
+      "quantityRange": "100-299",
+      "price": 6.49
+    },
+    {
+      "quantityRange": "300-499",
+      "price": 5.10
+    },
+    {
+      "quantityRange": "≥500",
+      "price": 4.25
+    }
+  ],
+  "sample": {
+    "available": true,
+    "price": 2.99
+  },
+  "variants": [
+    {
+      "color": "Navy Blue",
+      "image": "/img/navy_shirt1.png"
+    },
+    {
+      "color": "White",
+      "image": "/img/white_shirt1.png"
+    },
+    {
+      "color": "Black",
+      "image": "/img/black_shirt1.png"
+    }
+  ],
+  "shipping": {
+    "type": "Standard",
+    "description": "Ships in protective packaging. Estimated delivery time: 5–8 business days."
+  },
+  "actions": [
+    "Add_To_Cart",
+    "Chat_Now",
+    "Buy_Now"
+  ],
+  "description": "A stylish and comfortable slim fit shirt made from high-quality breathable cotton. Ideal for casual outings or semi-formal events. Soft on the skin, wrinkle-resistant, and easy to maintain.",
+  "images": [
+    "/img/product2.png",
+    "/img/navy_shirt2.png",
+    "/img/white_shirt1.png",
+    "/img/black_shirt1.png"
+  ],
+  "productDetails": {
+    "keyFeatures": [
+      "100% Premium Cotton – Soft & Breathable",
+      "Slim Fit Design with Button-Down Collar",
+      "Wrinkle-Resistant & Easy to Iron",
+      "Machine Washable",
+      "Double-stitched hems for durability"
+    ],
+    "additionalFeatures": [
+      "Available in multiple sizes (S to XXL)",
+      "Colorfast fabric – doesn’t fade after wash",
+      "Great for layering or solo wear",
+      "Pre-shrunk to reduce shrinkage"
+    ],
+    "keyAttributes": {
+      "Material": "100% Cotton",
+      "Fit": "Slim",
+      "Sleeve": "Full Sleeve",
+      "Care": "Machine Washable",
+      "Sizes": "S, M, L, XL, XXL",
+      "Packaging": "Individually poly-bagged with size sticker"
+    }
+  }
+}
+
+]
