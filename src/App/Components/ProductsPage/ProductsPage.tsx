@@ -1,10 +1,22 @@
-import ProductCard from "@/App/Shared/Card";
+import type { IProduct } from "@/App/Interfaces";
+import ProductCard from "@/App/Shared/ProductCard";
+import { FetchData } from "@/App/Utils/FetchData";
+import { useEffect, useState } from "react";
 import Categories from "../Features/CategorySection/Categories";
 import FilterSection from "./FilterSection";
 const ProductsPage = () => {
+  const [Products, setProducts] = useState<IProduct[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await FetchData();
+      setProducts(data);
+    };
+    fetchData();
+  }, []);
   return (
     <div className="flex flex-col md:flex-row gap-4 max-w-[1520px] mx-auto mt-20 ">
-      <div className="">
+      <div>
         <FilterSection
           title="Price"
           options={[
@@ -88,18 +100,21 @@ const ProductsPage = () => {
       <div className="max-w-[1100px] ml-auto">
         <Categories number={6} />
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  mt-20 gap-4  ">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {Products.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
+          {Products.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
+          {Products.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
+          {Products.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
+          {Products.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
         </div>
       </div>
     </div>

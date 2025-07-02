@@ -3,9 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useKeenSlider } from "keen-slider/react";
 import { Heart } from "lucide-react";
 import { useState } from "react";
+import type { IProduct } from "../Interfaces";
 import Slider from "./ImageSwiper";
 
-const ProductCard = () => {
+interface ProductCardProps {
+  product: IProduct;
+}
+const ProductCard = ({ product }: ProductCardProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
@@ -14,7 +18,7 @@ const ProductCard = () => {
       setCurrentSlide(slider.track.details.rel);
     },
   });
-  const images = [1, 2];
+
   const handleBookmark = () => {
     console.log("Bookmark clicked");
   };
@@ -33,7 +37,7 @@ const ProductCard = () => {
             <Slider
               instanceRef={instanceRef}
               sliderRef={sliderRef}
-              images={["/images/watch.png", "/images/watch.png"]}
+              images={product?.images}
             />
           </div>
         </div>
@@ -41,7 +45,7 @@ const ProductCard = () => {
         <div className=" p-4 !space-y-2">
           <div>
             <div className="flex justify-center !space-x-1 pb-4">
-              {images.map((_, idx) => (
+              {product?.images.map((_, idx) => (
                 <div
                   key={idx}
                   onClick={() => instanceRef.current?.moveToIdx(idx)}
@@ -54,8 +58,9 @@ const ProductCard = () => {
           </div>
           <div className="flex gap-2 justify-between items-start ">
             <h3 className="text-md w-[85%]   font-medium leading-tight">
-              Bluetooth Wireless Earbuds with Deep Bass, 40H Playtime, LED
-              Display, IP7 Rating, Mic for Phone and Android, Black.
+              {product?.name.length > 100
+                ? `${product?.name.slice(0, 100)}...`
+                : product?.name}
             </h3>
 
             <div className="flex items-center justify-between !space-x-1">
@@ -64,17 +69,21 @@ const ProductCard = () => {
                 alt="product image"
                 className="object-contain h-4 w-4  "
               />
-              <span className="text-sm   font-medium ">4.2</span>
+              <span className="text-sm   font-medium ">
+                {product?.rating.score}
+              </span>
             </div>
           </div>
 
           <div className="flex items-center absolute bottom-3  justify-between">
             <div className="flex items-center !space-x-2">
               <span className="text-sm font-semibold text-[#FCAB3F]">
-                $20-$28
+                $ {product?.priceTiers[0].quantityRange}
               </span>
               <span className="text-md  text-[#484848]">•</span>
-              <span className="text-xs text-[#484848]">MOQ : 10</span>
+              <span className="text-xs text-[#484848]">
+                MOQ : {product.minimumOrderQuantity}
+              </span>
             </div>
           </div>
         </div>

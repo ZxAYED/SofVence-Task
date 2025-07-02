@@ -21,8 +21,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const Categories = ({ number }: { number?: number }) => {
-  const numberOfItems = number || 8;
+const Categories = ({ number }: { number: number }) => {
   const handleCategoryClick = (categoryName: string) => {
     console.log(`Dont click me, said by: ${categoryName}`);
   };
@@ -48,7 +47,7 @@ const Categories = ({ number }: { number?: number }) => {
           {categoriesData.map((category, index) => (
             <CarouselItem
               key={index}
-              className={`basis-1/2   md:basis-1/4 lg:basis-1/6 xl:basis-1/${numberOfItems}   `}
+              className={`basis-1/2   md:basis-1/4 lg:basis-1/6 xl:basis-1/${number}`}
             >
               <div className="">
                 <Card
