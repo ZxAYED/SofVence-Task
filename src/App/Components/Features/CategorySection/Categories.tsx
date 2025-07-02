@@ -41,7 +41,7 @@ const Categories = ({ number }: { number: number }) => {
     { name: "Outwear & Jackets", image: img11 },
   ];
   return (
-    <div className=" relative  max-w-[1520px] md:!mx-auto">
+    <div className=" relative  max-w-[1520px] md:!mx-auto mt-20">
       <Carousel className="w-full ">
         <CarouselContent className="">
           {categoriesData.map((category, index) => (

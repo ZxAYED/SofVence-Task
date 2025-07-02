@@ -20,7 +20,7 @@ const FilterSection = ({ title, options }: IFilterProps) => {
   };
 
   return (
-    <div className="bg-[#FFF7EC] w-[286px] mb-5 rounded-xl p-4  ">
+    <div className="bg-[#FFF7EC] w-[286px] mb-5 rounded-xl p-4 mt-20 ">
       <h3 className="font-medium text-xl text-[#1A1A1A] mb-2">{title}</h3>
       <ul className="space-y-2">
         {options.map((option) => (
