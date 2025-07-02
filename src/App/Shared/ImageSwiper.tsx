@@ -1,18 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import "keen-slider/keen-slider.min.css";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect } from "react";
+import type { ISlider } from "../Interfaces";
 
-const Slider = ({
-  images,
-  instanceRef,
-  sliderRef,
-}: {
-  images: string[];
-  instanceRef: any;
-  sliderRef: any;
-}) => {
+const Slider = ({ images, instanceRef, sliderRef }: ISlider) => {
   useEffect(() => {
     const timer = setInterval(() => {
       instanceRef.current?.next();
@@ -27,7 +19,7 @@ const Slider = ({
         <div className="keen-slider__slide" key={index}>
           <img
             src={image}
-            className="object-contain h-60  mt-0  w-full "
+            className="object-contain h-60 max-w-[356px] mt-0  w-full "
             alt="Image of a product"
           />
           <button

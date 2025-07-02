@@ -19,12 +19,12 @@ const ProductCard = () => {
     console.log("Bookmark clicked");
   };
   return (
-    <Card className="w-full max-w-sm mx-auto h-[430px] md:h-[480px] lg:h-[430px] shadow-lg">
+    <Card className=" relative w-full max-w-sm mx-auto h-[430px] md:h-[480px] lg:h-[430px] shadow-lg">
       <CardContent className="p-0">
         <div className="relative rounded-t-lg">
           <Button
             onClick={handleBookmark}
-            className="absolute top-4 right-4 z-10 bg-gray-400/90 hover:bg-gray-500  rounded-full h-10 w-10"
+            className="absolute top-0 right-4 z-10 bg-gray-400/90 hover:bg-gray-500  rounded-full h-10 w-10"
           >
             <Heart className="h-10 w-10 text-white" />
           </Button>
@@ -68,7 +68,7 @@ const ProductCard = () => {
             </div>
           </div>
 
-          <div className="flex items-center !pt-3 justify-between">
+          <div className="flex items-center absolute bottom-3  justify-between">
             <div className="flex items-center !space-x-2">
               <span className="text-sm font-semibold text-[#FCAB3F]">
                 $20-$28

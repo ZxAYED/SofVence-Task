@@ -1,17 +1,18 @@
-import { Card } from "@/components/ui/card";
-import img1 from "../../../../public/images/electronics.png";
-import img2 from "../../../../public/images/image(1).png";
-import img11 from "../../../../public/images/image(10).png";
-import img3 from "../../../../public/images/image(2).png";
-import img4 from "../../../../public/images/image(3).png";
-import img5 from "../../../../public/images/image(4).png";
-import img6 from "../../../../public/images/image(5).png";
-import img7 from "../../../../public/images/image(6).png";
-import img8 from "../../../../public/images/image(7).png";
-import img9 from "../../../../public/images/image(8).png";
-import img10 from "../../../../public/images/image(9).png";
-import img13 from "../../../../public/images/image.png";
+import img1 from "../../../../../public/images/electronics.png";
+import img2 from "../../../../../public/images/image(1).png";
+import img11 from "../../../../../public/images/image(10).png";
+import img3 from "../../../../../public/images/image(2).png";
+import img4 from "../../../../../public/images/image(3).png";
+import img5 from "../../../../../public/images/image(4).png";
+import img6 from "../../../../../public/images/image(5).png";
+import img7 from "../../../../../public/images/image(6).png";
+import img8 from "../../../../../public/images/image(7).png";
+import img9 from "../../../../../public/images/image(8).png";
+import img10 from "../../../../../public/images/image(9).png";
+import img13 from "../../../../../public/images/image.png";
+import { Card } from "../../../../components/ui/card";
 
+import type { ICategory } from "@/App/Interfaces";
 import {
   Carousel,
   CarouselContent,
@@ -20,16 +21,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export interface ICategory {
-  name: string;
-  image: string;
-}
-
-const Categories = () => {
+const Categories = ({ number }: { number?: number }) => {
+  const numberOfItems = number || 8;
   const handleCategoryClick = (categoryName: string) => {
     console.log(`Dont click me, said by: ${categoryName}`);
   };
-  const caterogiesData: ICategory[] = [
+  const categoriesData: ICategory[] = [
     { name: "Electronics", image: img1 },
     { name: "Home & Living", image: img13 },
     { name: "Fashion & Apperel", image: img2 },
@@ -37,7 +34,6 @@ const Categories = () => {
     { name: "Industrial ", image: img4 },
     { name: "Health & Wellness", image: img5 },
     { name: " Furniture", image: img6 },
-
     { name: "Men's Clothing", image: img7 },
     { name: "Women's Clothing", image: img8 },
     { name: "Footwear", image: img9 },
@@ -46,24 +42,24 @@ const Categories = () => {
     { name: "Outwear & Jackets", image: img11 },
   ];
   return (
-    <div className=" relative mt-20 max-w-[1520px] !mx-auto">
+    <div className=" relative  max-w-[1520px] md:!mx-auto">
       <Carousel className="w-full ">
         <CarouselContent className="">
-          {caterogiesData.map((category, index) => (
+          {categoriesData.map((category, index) => (
             <CarouselItem
               key={index}
-              className="basis-1/2   md:basis-1/4 lg:basis-1/6 xl:basis-1/8    "
+              className={`basis-1/2   md:basis-1/4 lg:basis-1/6 xl:basis-1/${numberOfItems}   `}
             >
               <div className="">
                 <Card
                   onClick={() => handleCategoryClick(category.name)}
-                  className={`relative overflow-hidden m-0 p-0 border-box h-[140px]  rounded-lg cursor-pointer transition-transform hover:scale-105 $`}
+                  className={`relative overflow-hidden m-0 p-0 border-box h-[140px]  rounded-lg cursor-pointer transition-transform group  $`}
                 >
                   <div className="  w-full h-full">
                     <img
                       src={category.image}
                       alt={category.name}
-                      className="object-fill w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+                      className="object-fill w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-115"
                     />
 
                     <div className="absolute bottom-2 left-0 right-0 ">
