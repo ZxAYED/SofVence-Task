@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../../App";
 import Home from "../Components/HomePage/Home";
 import IndividualProduct from "../Components/IndividualProductPage/IndividualProduct";
+import ProductsPage from "../Components/ProductsPage/ProductsPage";
 
 const routes = createBrowserRouter([
   {
@@ -9,11 +10,15 @@ const routes = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "", // default child route (Home)
+        path: "",
         element: <Home />,
       },
       {
-        path: "IndividualProduct", // matches /IndividualProduct
+        path: "/products",
+        element: <ProductsPage />,
+      },
+      {
+        path: "/products/:productId",
         element: <IndividualProduct />,
       },
     ],
@@ -21,6 +26,3 @@ const routes = createBrowserRouter([
 ]);
 
 export default routes;
-
-
-      

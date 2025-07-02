@@ -1,13 +1,17 @@
-import ProductExtraDetails from "./ProductExtraDetails";
+import { useParams } from "react-router-dom";
 import ProductDetails from "./ProductDetails";
+import ProductExtraDetails from "./ProductExtraDetails";
+
 const IndividualProduct = () => {
-  return <div className="w-[1520px]">
-    <ProductDetails/>
-    <ProductExtraDetails/>
+  const { productId } = useParams();
+  console.log("🚀 ~ IndividualProduct ~ productId:", productId);
 
-
-  </div>;
-
+  return (
+    <div className="w-[1520px] mx-auto">
+      <ProductDetails />
+      <ProductExtraDetails />
+    </div>
+  );
 };
 
 export default IndividualProduct;
