@@ -4,9 +4,10 @@ import "./index.css";
 
 import { RouterProvider } from "react-router-dom";
 import routes from "./App/Router/index.tsx";
+import React from "react";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
+  <React.StrictMode>
     <RouterProvider router={routes} />
-  </StrictMode>
+  </React.StrictMode>
 );
