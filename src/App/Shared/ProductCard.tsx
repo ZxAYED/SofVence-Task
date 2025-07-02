@@ -25,42 +25,42 @@ const ProductCard = ({ product }: ProductCardProps) => {
   };
   return (
     <>
-      <Link to={`/products/${product?.productId}`}>
-        <Card className=" relative w-full max-w-sm mx-auto h-[430px] md:h-[480px] lg:h-[430px] shadow-lg">
-          <CardContent className="p-0">
-            <div className="relative rounded-t-lg">
-              <Button
-                onClick={handleBookmark}
-                className="absolute top-0 right-4 z-10 bg-gray-400/90 hover:bg-gray-500  rounded-full h-10 w-10"
-              >
-                <Heart className="h-10 w-10 text-white" />
-              </Button>
+      <Card className=" relative w-full max-w-sm mx-auto h-[430px] md:h-[480px] lg:h-[430px] shadow-lg">
+        <CardContent className="p-0">
+          <div className="relative rounded-t-lg">
+            <Button
+              onClick={handleBookmark}
+              className="absolute top-0 right-4 z-10 bg-gray-400/90 hover:bg-gray-500  rounded-full h-10 w-10"
+            >
+              <Heart className="h-10 w-10 text-white" />
+            </Button>
 
-              <div className="flex  mt-0 pt-0  ">
-                <Slider
-                  instanceRef={instanceRef}
-                  sliderRef={sliderRef}
-                  images={product?.images}
-                />
+            <div className="flex  mt-0 pt-0  ">
+              <Slider
+                instanceRef={instanceRef}
+                sliderRef={sliderRef}
+                images={product?.images}
+              />
+            </div>
+          </div>
+
+          <div className=" p-4 !space-y-2">
+            <div>
+              <div className="flex justify-center !space-x-1 pb-4">
+                {product?.images.map((_, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => instanceRef.current?.moveToIdx(idx)}
+                    className={`w-2 h-2 rounded-full ${
+                      idx === currentSlide ? "bg-[#F04436]" : "bg-gray-300"
+                    }`}
+                  ></div>
+                ))}
               </div>
             </div>
-
-            <div className=" p-4 !space-y-2">
-              <div>
-                <div className="flex justify-center !space-x-1 pb-4">
-                  {product?.images.map((_, idx) => (
-                    <div
-                      key={idx}
-                      onClick={() => instanceRef.current?.moveToIdx(idx)}
-                      className={`w-2 h-2 rounded-full ${
-                        idx === currentSlide ? "bg-[#F04436]" : "bg-gray-300"
-                      }`}
-                    ></div>
-                  ))}
-                </div>
-              </div>
+            <Link to={`/products/${product?.productId}`}>
               <div className="flex gap-2 justify-between items-start ">
-                <h3 className="text-md w-[85%]   font-medium leading-tight">
+                <h3 className="w-[85%] text-md  font-medium leading-tight">
                   {product?.name.length > 100
                     ? `${product?.name.slice(0, 100)}...`
                     : product?.name}
@@ -89,10 +89,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
                   </span>
                 </div>
               </div>
-            </div>
-          </CardContent>
-        </Card>
-      </Link>
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
     </>
   );
 };

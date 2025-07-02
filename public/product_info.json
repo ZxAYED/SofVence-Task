@@ -49,11 +49,7 @@
       "type": "Standard",
       "description": "Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in."
     },
-    "actions": [
-      "Add_To_Cart",
-      "Chat_Now",
-      "Buy_Now"
-    ],
+    "actions": ["Add_To_Cart", "Chat_Now", "Buy_Now"],
     "description": "Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in. Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in. Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in. Lorem ipsum dolor sit amet consectetur. Eget volutpat varius proin risus nisi. Egestas purus ut id urna convallis in.",
     "images": [
       "/img/black_Earbuds1.png",
@@ -62,12 +58,7 @@
       "/img/white_Earbuds2.png",
       "/img/white_Earbuds3.png",
       "/img/pink_Earbuds1.png",
-      "/img/pink_Earbuds2.png",
-      "/img/img1.png",
-      "/img/img2.png",
-      "/img/img3.png",
-      "/img/img4.png",
-      "/img/img5.png"
+      "/img/pink_Earbuds2.png"
     ],
     "productDetails": {
       "keyFeatures": [
@@ -148,11 +139,7 @@
       "type": "Express",
       "description": "Shipped via secure express courier. Delivery within 7-10 business days."
     },
-    "actions": [
-      "Add_To_Cart",
-      "Chat_Now",
-      "Buy_Now"
-    ],
+    "actions": ["Add_To_Cart", "Chat_Now", "Buy_Now"],
     "description": "Track your health and fitness with the Smart Fitness Watch. Equipped with a heart rate monitor, sleep tracking, and waterproof design, it's built for daily life. Get real-time notifications, control music, and more with just a flick of your wrist.",
     "images": [
       "/img/product3.png",
@@ -187,90 +174,85 @@
     }
   },
   {
-  "productId": "COTTON-SHIRT-NAVY",
-  "name": "Men's Premium Cotton Casual Shirt – Slim Fit, Breathable, Button Down",
-  "brand": "UrbanStyle Apparel",
-  "category": "Clothing",
-  "rating": {
-    "score": 4.3,
-    "reviews": 3219
-  },
-  "minimumOrderQuantity": 20,
-  "priceTiers": [
-    {
-      "quantityRange": "20-99",
-      "price": 7.99
+    "productId": "COTTON-SHIRT-NAVY",
+    "name": "Men's Premium Cotton Casual Shirt – Slim Fit, Breathable, Button Down",
+    "brand": "UrbanStyle Apparel",
+    "category": "Clothing",
+    "rating": {
+      "score": 4.3,
+      "reviews": 3219
     },
-    {
-      "quantityRange": "100-299",
-      "price": 6.49
-    },
-    {
-      "quantityRange": "300-499",
-      "price": 5.10
-    },
-    {
-      "quantityRange": "≥500",
-      "price": 4.25
-    }
-  ],
-  "sample": {
-    "available": true,
-    "price": 2.99
-  },
-  "variants": [
-    {
-      "color": "Navy Blue",
-      "image": "/img/navy_shirt1.png"
-    },
-    {
-      "color": "White",
-      "image": "/img/white_shirt1.png"
-    },
-    {
-      "color": "Black",
-      "image": "/img/black_shirt1.png"
-    }
-  ],
-  "shipping": {
-    "type": "Standard",
-    "description": "Ships in protective packaging. Estimated delivery time: 5–8 business days."
-  },
-  "actions": [
-    "Add_To_Cart",
-    "Chat_Now",
-    "Buy_Now"
-  ],
-  "description": "A stylish and comfortable slim fit shirt made from high-quality breathable cotton. Ideal for casual outings or semi-formal events. Soft on the skin, wrinkle-resistant, and easy to maintain.",
-  "images": [
-    "/img/product2.png",
-    "/img/navy_shirt2.png",
-    "/img/white_shirt1.png",
-    "/img/black_shirt1.png"
-  ],
-  "productDetails": {
-    "keyFeatures": [
-      "100% Premium Cotton – Soft & Breathable",
-      "Slim Fit Design with Button-Down Collar",
-      "Wrinkle-Resistant & Easy to Iron",
-      "Machine Washable",
-      "Double-stitched hems for durability"
+    "minimumOrderQuantity": 20,
+    "priceTiers": [
+      {
+        "quantityRange": "20-99",
+        "price": 7.99
+      },
+      {
+        "quantityRange": "100-299",
+        "price": 6.49
+      },
+      {
+        "quantityRange": "300-499",
+        "price": 5.1
+      },
+      {
+        "quantityRange": "≥500",
+        "price": 4.25
+      }
     ],
-    "additionalFeatures": [
-      "Available in multiple sizes (S to XXL)",
-      "Colorfast fabric – doesn’t fade after wash",
-      "Great for layering or solo wear",
-      "Pre-shrunk to reduce shrinkage"
+    "sample": {
+      "available": true,
+      "price": 2.99
+    },
+    "variants": [
+      {
+        "color": "Navy Blue",
+        "image": "/img/navy_shirt1.png"
+      },
+      {
+        "color": "White",
+        "image": "/img/white_shirt1.png"
+      },
+      {
+        "color": "Black",
+        "image": "/img/black_shirt1.png"
+      }
     ],
-    "keyAttributes": {
-      "Material": "100% Cotton",
-      "Fit": "Slim",
-      "Sleeve": "Full Sleeve",
-      "Care": "Machine Washable",
-      "Sizes": "S, M, L, XL, XXL",
-      "Packaging": "Individually poly-bagged with size sticker"
+    "shipping": {
+      "type": "Standard",
+      "description": "Ships in protective packaging. Estimated delivery time: 5–8 business days."
+    },
+    "actions": ["Add_To_Cart", "Chat_Now", "Buy_Now"],
+    "description": "A stylish and comfortable slim fit shirt made from high-quality breathable cotton. Ideal for casual outings or semi-formal events. Soft on the skin, wrinkle-resistant, and easy to maintain.",
+    "images": [
+      "/img/product2.png",
+      "/img/navy_shirt2.png",
+      "/img/white_shirt1.png",
+      "/img/black_shirt1.png"
+    ],
+    "productDetails": {
+      "keyFeatures": [
+        "100% Premium Cotton – Soft & Breathable",
+        "Slim Fit Design with Button-Down Collar",
+        "Wrinkle-Resistant & Easy to Iron",
+        "Machine Washable",
+        "Double-stitched hems for durability"
+      ],
+      "additionalFeatures": [
+        "Available in multiple sizes (S to XXL)",
+        "Colorfast fabric – doesn’t fade after wash",
+        "Great for layering or solo wear",
+        "Pre-shrunk to reduce shrinkage"
+      ],
+      "keyAttributes": {
+        "Material": "100% Cotton",
+        "Fit": "Slim",
+        "Sleeve": "Full Sleeve",
+        "Care": "Machine Washable",
+        "Sizes": "S, M, L, XL, XXL",
+        "Packaging": "Individually poly-bagged with size sticker"
+      }
     }
   }
-}
-
 ]

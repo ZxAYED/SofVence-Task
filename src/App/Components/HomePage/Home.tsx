@@ -6,7 +6,8 @@ import Thambnail from "@/App/Shared/Thambnail";
 import { FetchData } from "@/App/Utils/FetchData";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Categories from "../Features/CategorySection/Categories";
+
+import Categories from "./Categories";
 import JoinUs from "./JoinUs";
 import TopManufacturer from "./TopManufacturer";
 
@@ -16,6 +17,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await FetchData();
+      console.log("🚀 ~ fetchData ~ data:", data);
       setProducts(data);
     };
     fetchData();

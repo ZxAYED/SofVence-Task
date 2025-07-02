@@ -2,7 +2,8 @@ import type { IProduct } from "@/App/Interfaces";
 import ProductCard from "@/App/Shared/ProductCard";
 import { FetchData } from "@/App/Utils/FetchData";
 import { useEffect, useState } from "react";
-import Categories from "../Features/CategorySection/Categories";
+
+import Categories from "../HomePage/Categories";
 import JoinUs from "../HomePage/JoinUs";
 import TopRatedManufacturers from "../HomePage/TopManufacturer";
 import FilterSection from "./FilterSection";
@@ -103,19 +104,19 @@ const ProductsPage = () => {
         <div className="max-w-[1100px] ml-auto">
           <Categories number={6} />
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  mt-20 gap-4  ">
-            {Products.map((product, index) => (
+            {Products?.map((product, index) => (
               <ProductCard key={index} product={product} />
             ))}
-            {Products.map((product, index) => (
+            {Products?.map((product, index) => (
               <ProductCard key={index} product={product} />
             ))}
-            {Products.map((product, index) => (
+            {Products?.map((product, index) => (
               <ProductCard key={index} product={product} />
             ))}
-            {Products.map((product, index) => (
+            {Products?.map((product, index) => (
               <ProductCard key={index} product={product} />
             ))}
-            {Products.map((product, index) => (
+            {Products?.map((product, index) => (
               <ProductCard key={index} product={product} />
             ))}
           </div>

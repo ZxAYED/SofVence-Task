@@ -1,16 +1,16 @@
-import img1 from "../../../../../public/images/electronics.png";
-import img2 from "../../../../../public/images/image(1).png";
-import img11 from "../../../../../public/images/image(10).png";
-import img3 from "../../../../../public/images/image(2).png";
-import img4 from "../../../../../public/images/image(3).png";
-import img5 from "../../../../../public/images/image(4).png";
-import img6 from "../../../../../public/images/image(5).png";
-import img7 from "../../../../../public/images/image(6).png";
-import img8 from "../../../../../public/images/image(7).png";
-import img9 from "../../../../../public/images/image(8).png";
-import img10 from "../../../../../public/images/image(9).png";
-import img13 from "../../../../../public/images/image.png";
-import { Card } from "../../../../components/ui/card";
+import { Card } from "@/components/ui/card";
+import img1 from "../../../../public/images/electronics.png";
+import img2 from "../../../../public/images/image(1).png";
+import img11 from "../../../../public/images/image(10).png";
+import img3 from "../../../../public/images/image(2).png";
+import img4 from "../../../../public/images/image(3).png";
+import img5 from "../../../../public/images/image(4).png";
+import img6 from "../../../../public/images/image(5).png";
+import img7 from "../../../../public/images/image(6).png";
+import img8 from "../../../../public/images/image(7).png";
+import img9 from "../../../../public/images/image(8).png";
+import img10 from "../../../../public/images/image(9).png";
+import img13 from "../../../../public/images/image.png";
 
 import type { ICategory } from "@/App/Interfaces";
 import {
@@ -47,7 +47,7 @@ const Categories = ({ number }: { number: number }) => {
           {categoriesData.map((category, index) => (
             <CarouselItem
               key={index}
-              className={`basis-1/2   md:basis-1/4 lg:basis-1/6 xl:basis-1/${number}`}
+              className={`basis-1/2   md:basis-1/4 lg:basis-1/${number} xl:basis-1/`}
             >
               <div className="">
                 <Card
