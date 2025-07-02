@@ -8,6 +8,7 @@ const manufacturers =[
     id: 1,
     shopName: "Samsung Electronics",
     name: "Samsung",
+    location: "Seoul, South Korea",
     rating: 4.9,
     totalReviews: 1200,
     images: [
@@ -21,6 +22,7 @@ const manufacturers =[
     id: 2,
     shopName: "Apple Store",
     name: "Apple",
+    location: "Cupertino, California, USA",
     rating: 4.8,
     totalReviews: 1500,
     images: [
@@ -34,6 +36,7 @@ const manufacturers =[
     id: 3,
     shopName: "Sony Corporation",
     name: "Sony",
+    location: "Tokyo, Japan",
     rating: 4.7,
     totalReviews: 980,
     images: [
@@ -47,6 +50,7 @@ const manufacturers =[
     id: 4,
     shopName: "LG Electronics",
     name: "LG",
+    location: "Seoul, South Korea",
     rating: 4.6,
     totalReviews: 875,
     images: [
@@ -55,7 +59,35 @@ const manufacturers =[
       "https://www.lg.com/in/images/refrigerators/md07518153/gallery/GL-T322RPZY-Refrigerators-Front-View-D-01.jpg",
       "https://www.lg.com/in/images/air-conditioners/md07518723/gallery/PS-Q19WNZF-Air-Conditioners-Front-View-D-01.jpg"
     ]
-  }
+  },
+  {
+  id: 5,
+  shopName: "Samsung Digital Plaza",
+  name: "Samsung",
+  location: "Suwon, South Korea",
+  rating: 4.7,
+  totalReviews: 1025,
+  images: [
+    "https://images.samsung.com/is/image/samsung/p6pim/in/ww80t504dax-tl/gallery/in-front-loading-washer-ww80t504dax-tl-368470601?$684_547_PNG$",
+    "https://images.samsung.com/is/image/samsung/p6pim/in/ua55au7700klxl/gallery/in-crystal-uhd-au7700-ua55au7700klxl-531554053?$684_547_PNG$",
+    "https://images.samsung.com/is/image/samsung/p6pim/in/rt42c5532s8-hl/gallery/in-top-mount-freezer-rt42c5532s8-hl-538728366?$684_547_PNG$",
+    "https://images.samsung.com/is/image/samsung/p6pim/in/ar18cy3zawk-hl/gallery/in-split-ac-ar18cy3zawk-hl-535883893?$684_547_PNG$"
+  ]
+},
+{
+  id: 6,
+  shopName: "Sony Center",
+  name: "Sony",
+  location: "Tokyo, Japan",
+  rating: 4.5,
+  totalReviews: 740,
+  images: [
+    "https://m.media-amazon.com/images/I/61I0CV-T3iL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81Tz0y-pJfL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61xA1yZkDIL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71F6noeLxiL._SL1500_.jpg"
+  ]
+}
 ]
 ;
 
@@ -68,11 +100,10 @@ const TopRatedManufacturers = () => {
           {manufacturers.map((mfg) => (
             <ManufacturerCard
               key={mfg.id}
-              name={mfg.name}
               shopName={mfg.shopName}
+              location={mfg.location}
               image={mfg.images}
               rating={mfg.rating}
-              totalReviews={mfg.totalReviews}
             />
           ))}
         </div>
