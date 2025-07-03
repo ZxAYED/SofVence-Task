@@ -9,14 +9,14 @@ const Thambnail = () => {
           <img
             src={image1}
             alt="Thumbnail"
-            className="w-[750px] h-[500px] rounded-3xl shadow-md"
+            className="w-[750px] h-[500px] object-fill rounded-3xl shadow-md"
           />
         </div>
         <div>
           <img
             src={image2}
             alt="Thumbnail"
-            className="w-[750px] h-[500px] rounded-3xl shadow-md"
+            className="w-[750px] h-[500px] object-fill rounded-3xl shadow-md"
           />
         </div>
       </div>

@@ -1,19 +1,182 @@
-import { Link } from "react-router-dom";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
+import logo from "../../../public/logo/logo.png";
+import arrow from "../../../public/navmenu/arrow.svg";
+import menu from "../../../public/navmenu/menu.svg";
+import world from "../../../public/navmenu/public.svg";
+import shopping from "../../../public/navmenu/shopping_cart.svg";
+import usa from "../../../public/navmenu/usa.svg";
 
-export function Navbar() {
+const Navbar = () => {
+  const [cartCount, setCartCount] = useState(3);
+
+  const categories = [
+    "Electronics",
+    "Fashion",
+    "Home & Garden",
+    "Sports & Outdoors",
+    "Books",
+    "Beauty & Health",
+    "Automotive",
+    "Toys & Games",
+  ];
+  const menuItems = [
+    "Become A Supplier",
+    "App & Extensions",
+    "Help Centre",
+    "Log In & Sign Up",
+  ];
+
+  const countries = [
+    { code: "USA", name: "United States", flag: usa },
+    { code: "CAN", name: "Canada", flag: "🇨🇦" },
+    { code: "UK", name: "United Kingdom", flag: "🇬🇧" },
+    { code: "AUS", name: "Australia", flag: "🇦🇺" },
+  ];
+
   return (
-    <div>
-      <div>
-        <div className="flex  items-center gap-4 justify-between max-w-[1520px] mx-auto p-4">
-          <div className="text-5xl font-bold hidden xl:block">
-            Welcome to SoftVence
+    <nav className="w-full text-[#1A1A1A)]  bg-white shadow  py-7">
+      <div className="max-w-[1520px] mx-auto flex items-center justify-between">
+        <div className="flex items-center space-x-[58px]">
+          <div className="flex items-center space-x-2">
+            <img alt="logo" src={logo} className="w-[124px] h-[45px]" />
           </div>
-          <div className="text-xl flex  font-bold justify-center items-center gap-20  ">
-            <Link to="/"> Shop 1</Link>
-            <Link to="/products"> Products</Link>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger className="relative p-2 " asChild>
+              <motion.div
+                whileHover={{ scale: 1.01 }}
+                whileTap={{ scale: 0.8, transition: { duration: 0.1 } }}
+                className="flex items-center bg-transparent text-lg  text-[#1A1A1A] hover:bg-white space-x-1 "
+              >
+                <span>Categories</span>
+                <ChevronDown className="h-4 w-4" />
+              </motion.div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="w-48">
+              {categories.map((category, idx) => (
+                <motion.div
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.8, transition: { duration: 0.1 } }}
+                  key={idx}
+                >
+                  <DropdownMenuItem className="text-lg px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer text-[#1A1A1A] ">
+                    {category}
+                  </DropdownMenuItem>
+                  <div className="border-t my-1" />
+                </motion.div>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+
+        <div className="flex items-center justify-between space-x-28">
+          <div className=" items-center space-x-2">
+            <div className=" ">
+              <div className="text-xs mb-1 text-[#666]">Delivered To</div>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <motion.div
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.9, transition: { duration: 0.1 } }}
+                    className="flex justify-center items-center"
+                  >
+                    <Button
+                      variant="ghost"
+                      className="flex items-center  p-0 h-auto text-md font-medium"
+                    >
+                      <span className="">USA</span>
+                      <img alt="flag" src={usa} className="w-4 h-5" />
+                      <img
+                        alt="arrow"
+                        src={arrow}
+                        className="w-fit h-fit -ml-2"
+                      />
+                    </Button>
+                  </motion.div>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-48">
+                  {countries.map((country) => (
+                    <DropdownMenuItem
+                      key={country.code}
+                      className="cursor-pointer"
+                    >
+                      <img alt="logo" src={country.flag} className="w-6 h-6" />
+                      {country.name}
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-6">
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.5, transition: { duration: 0.1 } }}
+              className="flex justify-center items-center"
+            >
+              <Button variant="ghost" size="icon" className="relative">
+                <img alt="cart" src={shopping} className="w-6 h-16" />
+                {cartCount > 0 && (
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs bg-red-500">
+                    {cartCount}
+                  </Badge>
+                )}
+              </Button>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.5, transition: { duration: 0.1 } }}
+              className="flex justify-center items-center"
+            >
+              <Button variant="ghost" size="icon">
+                <img alt="cart" src={world} className="w-6 h-6" />
+              </Button>
+            </motion.div>
+
+            <div>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="relative p-2" asChild>
+                  <motion.div
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.5, transition: { duration: 0.1 } }}
+                  >
+                    <img alt="menu" src={menu} className="w-6 h-6 text-black" />
+                  </motion.div>
+                </DropdownMenuTrigger>
+
+                <DropdownMenuContent
+                  align="start"
+                  className="w-56 rounded-xl shadow-md bg-white p-2 space-y-1"
+                >
+                  {menuItems.map((category, idx) => (
+                    <motion.div
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.8, transition: { duration: 0.1 } }}
+                      key={idx}
+                    >
+                      <DropdownMenuItem className="text-lg px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer text-[#1A1A1A] ">
+                        {category}
+                      </DropdownMenuItem>
+                      <div className="border-t my-1" />
+                    </motion.div>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
-}
+};
+export default Navbar;
