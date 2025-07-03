@@ -12,6 +12,15 @@ import JoinUs from "./JoinUs";
 import TopManufacturer from "./TopManufacturer";
 
 const Home = () => {
+return (
+  <>
+    <div>Welcome to SoftVence</div>
+    <SearchBar />
+    <Thambnail />
+    <TopManufacturer />
+    <JoinUs />
+  </>
+);
   const [Products, setProducts] = useState<IProduct[]>([]);
 
   useEffect(() => {
