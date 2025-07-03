@@ -11,7 +11,6 @@ export function Navbar() {
           <div className="text-xl flex  font-bold justify-center items-center gap-20  ">
             <Link to="/"> Shop 1</Link>
             <Link to="/products"> Products</Link>
-            <Link to="/"> Shop 3 </Link>
           </div>
         </div>
       </div>
