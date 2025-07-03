@@ -47,7 +47,7 @@ const Categories = ({ number }: { number: number }) => {
           {categoriesData.map((category, index) => (
             <CarouselItem
               key={index}
-              className={`basis-1/2   md:basis-1/4 lg:basis-1/${number} xl:basis-1/`}
+              className={`basis-1/2   md:basis-1/4 lg:basis-1/${number} xl:basis-1/${number} 2xl:basis-1/${number}  `}
             >
               <div className="">
                 <Card
